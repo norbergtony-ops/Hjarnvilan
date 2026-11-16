@@ -1,0 +1,41 @@
+INSTALLERA HJÄRNVILAN PÅ IPHONE
+================================
+
+A. PUBLICERA FÖRST (krävs för riktig PWA)
+------------------------------------------
+En PWA måste öppnas från en HTTPS-webbadress. Filer/iCloud/OneDrive räcker inte som
+webbhotell. En gratis lösning är GitHub Pages:
+
+1. Gå till github.com i Safari eller på en dator och logga in/skapa konto.
+2. Skapa ett nytt PUBLIC repository med namnet hjarnvilan.
+3. Packa upp hjarnvilan-pwa.zip.
+   På iPhone: öppna Filer och tryck en gång på ZIP-filen.
+4. Ladda upp index.html, manifest.webmanifest, sw.js, README.txt och hela mappen icons
+   till repositoryts rot.
+5. I repositoryt, öppna Settings > Pages.
+6. Välj Deploy from a branch > main > / (root) > Save.
+7. Vänta någon minut. GitHub visar sedan webbadressen. Den brukar vara:
+   https://DITT-NAMN.github.io/hjarnvilan/
+
+B. LÄGG TILL PÅ HEMSKÄRMEN
+--------------------------
+1. Öppna den publicerade webbadressen i SAFARI på iPhone.
+2. Tryck på Dela-knappen (fyrkant med pil upp).
+3. Rulla ned och tryck Lägg till på hemskärmen.
+4. Slå på Öppna som webbapp om detta val visas.
+5. Behåll namnet Hjärnvilan och tryck Lägg till.
+6. Öppna därefter Hjärnvilan via den nya ikonen.
+7. Öppna appen en gång med internet så att offlinefilerna sparas.
+
+Om Lägg till på hemskärmen saknas: längst ned i delningsmenyn, tryck Redigera åtgärder
+och lägg till alternativet.
+
+C. PÅMINNELSER SOM FUNGERAR NÄR APPEN ÄR STÄNGD
+------------------------------------------------
+1. Skapa påminnelsen i Hjärnvilan.
+2. På startsidan under Kommande påminnelser, tryck Lägg i kalender.
+3. Öppna den nedladdade .ics-filen och lägg till händelsen i Kalender.
+4. Kontrollera att Kalender får skicka notiser i Inställningar > Notiser > Kalender.
+
+Appens egna timers och notiser är säkrast medan appen är öppen. Bakgrundspush kräver en
+separat push-tjänst/server och ingår inte i denna helt lokala version.
