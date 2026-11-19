@@ -1,0 +1,49 @@
+HJÄRNVILAN 3.0 – INSTALLERA OCH UPPDATERA
+==========================================
+
+NYTT I VERSION 3
+- Välj datum och gå tillbaka till tidigare dagar.
+- Se 7-dagarsöversikt och historik för 14, 30 eller 90 dagar.
+- Få aktivitetsförslag utifrån dagens värden och registreringarna i ett rullande 7-dagarsfönster.
+- Exportera historik som CSV eller full säkerhetskopia som JSON.
+- All data sparas fortfarande endast lokalt på enheten.
+
+UPPDATERA DIN BEFINTLIGA GITHUB-SIDA
+1. Packa upp ZIP-filen.
+2. Öppna ditt befintliga GitHub-repository för Hjärnvilan.
+3. Ersätt filerna i repositoryts rot med:
+   - index.html
+   - manifest.webmanifest
+   - manifest.json (kompatibilitetskopia)
+   - sw.js
+   - service-worker.js (kompatibilitetskopia)
+4. Öppna mappen icons och ersätt ikonfilerna där.
+5. Commit changes.
+6. Vänta några minuter på GitHub Pages.
+7. Öppna Hjärnvilan på iPhone med internetanslutning.
+8. Om gammal version visas: stäng appen helt och öppna den igen. Vid behov öppna webbadressen i Safari och uppdatera sidan.
+
+VIKTIGT FÖRE UPPDATERING
+Exportera en säkerhetskopia från din nuvarande app om den funktionen finns. Den här versionen använder lokal lagring med ny datastruktur. Befintliga uppgifter kan därför behöva läsas in via Mer > Återställ säkerhetskopia.
+
+NY INSTALLATION MED GITHUB PAGES
+1. Lägg index.html, manifest.webmanifest, manifest.json, sw.js och service-worker.js i repositoryts rot.
+2. Lägg ikonfilerna i mappen icons (små bokstäver).
+3. I GitHub: Settings > Pages.
+4. Välj Deploy from a branch, main och / (root), sedan Save.
+5. Öppna den publicerade HTTPS-adressen i Safari på iPhone.
+6. Dela > Lägg till på hemskärmen > Lägg till.
+7. Starta appen en gång med internet så att offlinefilerna sparas.
+
+INTEGRITET OCH BACKUP
+- Personliga värden skickas inte till GitHub eller någon server.
+- De sparas i Safari/webbappens lokala lagring på just den enheten.
+- Rensning av Safari webbplatsdata kan ta bort historiken.
+- Använd Historik > Säkerhetskopia och spara JSON-filen privat, till exempel i iCloud Drive.
+- Lägg aldrig säkerhetskopian i ditt offentliga GitHub-repository.
+
+ANVÄNDNING
+- Under Idag kan du välja valfri tidigare dag med pilarna eller datumfältet.
+- Under Historik kan du trycka Visa på en dag och ändra värdena.
+- Förslag för dagen uppdateras när energi, hjärndimma, sömn, belastning eller aktiviteter ändras.
+- Förslagen är planeringsstöd och ersätter inte medicinsk rådgivning.
